@@ -37,11 +37,7 @@ class File extends Model
 
         self::checkDirPermission();
 
-        $tmpPath = implode('/', [$image->dirname, $image->basename]);
-
         $image->save($file->getFilePath());
-
-        unlink($tmpPath);
 
         $file->save();
     }
