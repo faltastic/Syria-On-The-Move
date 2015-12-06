@@ -19,3 +19,16 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Picture::class, function (Faker\Generator $faker) {
+    return [
+
+    ];
+});
+
+$factory->define(App\Location::class, function (Faker\Generator $faker) {
+    return [
+        'lat' => rand(1250, 1400) / 100,
+        'lng' => rand(4900, 5100) / 100,
+    ];
+});

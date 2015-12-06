@@ -30,8 +30,6 @@ class Picture extends Model
 
         $file = File::make($this, $original, 'original');
 
-        unlink($tmpPath);
-
         event(new PictureHasBeenCreated($this));
     }
 

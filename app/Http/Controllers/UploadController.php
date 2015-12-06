@@ -27,5 +27,7 @@ class UploadController extends Controller
         $picture->init("/tmp/$tempname");
 
         $picture->addLocation($request);
+
+        unlink("/tmp/$tempname");
     }
 }
