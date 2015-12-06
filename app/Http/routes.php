@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::controller('upload', 'UploadController');
+
+Route::controller('/', 'PageController');

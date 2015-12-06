@@ -1,0 +1,30 @@
+{
+  "name": "syriaonthemove",
+  "version": "0.0.0",
+  "homepage": "https://github.com/SocialVisions/Syria-On-The-Move",
+  "authors": [
+    "Vincent Kollin <vkollin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "gridle": "~2.0.43"
+  },
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}

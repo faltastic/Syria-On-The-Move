@@ -1,0 +1,12 @@
+.slideshow {
+    @include shadowed-wrapper($gray_lighter);
+    
+    li {
+        @include container;
+        
+        img {
+            width : 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+section.page-section {
+    width: 100%;
+    
+    h1 {
+        text-align: center;
+        color     : $purple;
+    }
+
+    article {
+        @include container;
+        
+        .left,
+        .right {
+            @include two-column;
+        }
+    }
+}

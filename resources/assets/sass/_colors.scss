@@ -1,0 +1,13 @@
+$white       : rgb(255,255,255);
+$black       : rgb(0,0,0);
+
+// Gray
+$gray        : lighten($black, 25%);
+$gray_light  : lighten($gray, 33%);
+$gray_lighter: lighten($gray_light, 35%);
+$gray_dark   : darken($gray, 33%);
+$gray_darker : darken($gray_dark, 35%);
+
+//
+$purple      : rgb(255,37,255);
+$blue        : rgb(232,243,255);
