@@ -25,6 +25,12 @@
   },
   "dependencies": {
     "jquery": "~2.1.4",
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3",
+    "reqwest": "~2.0.5",
+    "stamen.tile": "http://maps.stamen.com/js/tile.stamen.js?v1.3.0",
+    "leaflet": "~0.7.7",
+    "leaflet.markercluster": "~0.4.0",
+    "leaflet.Photo": "turban/Leaflet.Photo",
+    "Leaflet.TileLegend": "yohanboniface/Leaflet.TileLegend"
   }
 }

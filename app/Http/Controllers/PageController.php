@@ -8,4 +8,9 @@ class PageController extends Controller
     {
         return view('page.index');
     }
+
+    public function getMap()
+    {
+        return view('page.map');
+    }
 }

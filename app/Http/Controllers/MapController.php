@@ -18,6 +18,10 @@ class MapController extends Controller
             $pictures = Picture::byBoundingBox($lat, $lng, $lat2, $lng2)->get();
         }
 
-        return response()->json((new PictureMapMapper($pictures))->getItems());
+        return response((new PictureMapMapper($pictures))->getItems())
+            ->header('Content-Type', 'application/json')
+            ->header('Access-Control-Allow-Origin', '*')
+            ->header('Access-Control-Allow-Methods', 'GET')
+            ->header('Access-Control-Allow-Headers', 'Content-Type, X-Auth-Token, Origin');
     }
 }

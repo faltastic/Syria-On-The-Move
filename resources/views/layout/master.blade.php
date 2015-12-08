@@ -11,6 +11,7 @@
     <title></title>
 
     {!! HTML::style(elixir('css/lib.css')) !!}
+    @yield('style')
     {!! HTML::style(elixir('css/app.css')) !!}
 </head>
 
@@ -22,9 +23,8 @@
     </main>
 
     {!! HTML::script(elixir('js/lib.js')) !!}
-    {!! HTML::script(elixir('js/app.js')) !!}
-
     @yield('script')
+    {!! HTML::script(elixir('js/app.js')) !!}
 
 </body>
 

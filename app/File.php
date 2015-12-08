@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Intervention\Image\Image;
 use File as Filesystem;
 use InterventionImage;
+use Illuminate\Http\Response;
 
 class File extends Model
 {
@@ -47,9 +48,14 @@ class File extends Model
         return implode('-', [$this->picture_id, $this->identifier]).'.'.$this->extension;
     }
 
+    public function getRelativeFilePath()
+    {
+        return 'app/'.self::$dir.$this->getFileName();
+    }
+
     public function getFilePath()
     {
-        return storage_path('app/'.self::$dir.$this->getFileName());
+        return storage_path($this->getRelativeFilePath());
     }
 
     public function getUrl()
@@ -60,6 +66,11 @@ class File extends Model
     public function getImage()
     {
         return file_exists($this->getFilePath()) ? InterventionImage::make($this->getFilePath()) : null;
+    }
+
+    public function response()
+    {
+        return InterventionImage::make($this->getFilePath())->response();
     }
 
     public static function checkDirPermission()

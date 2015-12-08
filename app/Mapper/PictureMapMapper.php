@@ -16,10 +16,11 @@ class PictureMapMapper
 
             return [
                 'id' => $item->id,
-                'lat' => $item->lat,
-                'lng' => $item->lng,
+                'lat' => (float) $item->lat,
+                'lng' => (float) $item->lng,
                 'thumbnail' => $item->getThumbnail('thumb-50-x')->getUrl(),
-                'url' => $item->getUrl(),
+                'url' => $item->getThumbnail('thumb-550-x')->getUrl(),
+                'caption' => $item->id,
             ];
         });
     }

@@ -6,6 +6,8 @@ class PictureController extends Controller
 {
     public function getIndex($picture, $identifier)
     {
-        return 'PictureController::getIndex($picture, $identifier)';
+        $file = $picture->files()->whereIdentifier($identifier)->get()->first();
+
+        return $file->response();
     }
 }

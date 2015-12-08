@@ -1232,6 +1232,9 @@ body {
     margin-left: -5px;
     margin-right: -5px; } }
 
+* {
+  box-sizing: border-box; }
+
 body {
   font-size: 16px; }
 
@@ -1264,5 +1267,48 @@ section.page-section {
         section.page-section article .left,
         section.page-section article .right {
           width: 50%; } }
+
+#map {
+  margin: 0;
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: white; }
+
+.leaflet-popup-photo .leaflet-popup-content-wrapper {
+  padding: 6px;
+  border-radius: 4px; }
+
+.leaflet-popup-photo .leaflet-popup-content {
+  margin: 0; }
+
+.leaflet-popup-photo .leaflet-popup-tip {
+  background: white; }
+
+.leaflet-popup-photo img {
+  display: block;
+  width: 100%; }
+
+.leaflet-popup-photo video {
+  display: block;
+  width: 100%; }
+
+.leaflet-popup-photo p {
+  margin: 5px 0 0; }
+
+.leaflet-popup-photo a.leaflet-popup-close-button {
+  top: -13px;
+  right: -13px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 12px;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 3px 14px #666666;
+  color: #949494; }
+  .leaflet-popup-photo a.leaflet-popup-close-button:hover {
+    color: #404040;
+    background-color: #ededed; }
 
 /*# sourceMappingURL=app.css.map */
