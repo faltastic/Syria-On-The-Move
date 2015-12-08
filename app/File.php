@@ -52,6 +52,11 @@ class File extends Model
         return storage_path('app/'.self::$dir.$this->getFileName());
     }
 
+    public function getUrl()
+    {
+        return action('PictureController@getIndex', [$this->picture->id, $this->identifier]);
+    }
+
     public function getImage()
     {
         return file_exists($this->getFilePath()) ? InterventionImage::make($this->getFilePath()) : null;
