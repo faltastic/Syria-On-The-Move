@@ -5,3 +5,18 @@
 body {
   font-size: 16px;
 }
+
+main#main {
+  z-index: 100;
+}
+
+a {
+  @include transition-default;
+  color          : $purple;
+  text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}
