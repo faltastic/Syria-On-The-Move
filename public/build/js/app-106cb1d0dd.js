@@ -8,4 +8,8 @@
 })(jQuery);
 
 
+(function(){
+    // $('#navigation').sticky({ topSpacing: 0 });
+})(jQuery);
+
 //# sourceMappingURL=app.js.map
