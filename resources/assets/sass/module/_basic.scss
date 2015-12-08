@@ -10,6 +10,15 @@ main#main {
   z-index: 100;
 }
 
+footer {
+  background: $blue;
+  padding   : 30px 0;
+  
+  .container {
+    @include container;
+  }
+}
+
 a {
   @include transition-default;
   color          : $purple;
@@ -19,4 +28,8 @@ a {
   &:focus {
     color: $blue;
   }
+}
+
+.ar {
+  direction: rtl;
 }

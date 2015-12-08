@@ -4,8 +4,8 @@
         <li><a href="#">Map</a></li>
         <li><a href="#">Why</a></li>
         <li><a href="#">Workshops</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Links</a></li>
+        <li><a href="#">Imprint</a></li>
     </ul>
 </nav>

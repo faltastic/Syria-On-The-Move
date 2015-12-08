@@ -22,6 +22,12 @@
         @yield('main')
     </main>
 
+    <footer>
+        <div class="container">
+            Footer
+        </div>
+    </footer>
+
     {!! HTML::script(elixir('js/lib.js')) !!}
     @yield('script')
     {!! HTML::script(elixir('js/app.js')) !!}

@@ -1,12 +1,16 @@
 .slideshow {
-    @include shadowed-wrapper($gray_lighter);
+  @include shadowed-wrapper($gray_lighter);
+  white-space: nowrap;
+  margin     : 0 0 30px;
+  padding    : 0;
+  
+  li {
+    white-space: nowrap;
+    display    : inline-block;
     
-    li {
-        @include container;
-        
-        img {
-            width : 100%;
-            height: auto;
-        }
+    img {
+      width : 100%;
+      height: auto;
     }
+  }
 }

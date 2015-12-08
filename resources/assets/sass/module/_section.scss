@@ -1,17 +1,46 @@
 section.page-section {
-    width: 100%;
+  width        : 100%;
+  margin-top   : 50px;
+  margin-bottom: 50px;
+  
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .section-title {
+    position     : relative;
+    display      : inline-block;
+    text-align   : center;
+    width        : 100%;
+    margin-bottom: 30px;
     
-    h1 {
-        text-align: center;
-        color     : $purple;
+    &::after {
+      content   : ' ';
+      position  : absolute;
+      display   : inline-block;
+      width     : 100%;
+      border-top: 1px solid $purple;
+      top       : 50%;
+      left      : 0;
+      z-index   : 200;
     }
 
-    article {
-        @include container;
-        
-        .left,
-        .right {
-            @include two-column;
-        }
+    h1 {
+      position  : relative;
+      z-index   : 201;
+      display   : inline-block;
+      padding   : 0 15px;
+      color     : $purple;
+      background: $white;
     }
+  }
+
+  article {
+    @include container;
+    
+    .left,
+    .right {
+      @include two-column;
+    }
+  }
 }

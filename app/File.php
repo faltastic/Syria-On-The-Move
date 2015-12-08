@@ -68,6 +68,11 @@ class File extends Model
         return file_exists($this->getFilePath()) ? InterventionImage::make($this->getFilePath()) : null;
     }
 
+    public function vertical()
+    {
+        return $this->height > $this->width;
+    }
+
     public function response()
     {
         return InterventionImage::make($this->getFilePath())->response();

@@ -97,6 +97,11 @@ class Picture extends Model
         return $exif;
     }
 
+    public static function random($count)
+    {
+        return self::limit($count)->get();
+    }
+
     public function scopeByGeoPoint($query, $lat, $lng)
     {
         $query->join('locations', function ($join) {

@@ -1,0 +1,90 @@
+#section-map {
+  height: 100vh;
+}
+
+#section-map-map,
+#section-map-glitter,
+#section-map-overlay {
+  position: absolute;
+  display : inline-block;
+  top     : 0;
+  left    : 0;
+  width   : 100%;
+  height  : 100%;
+}
+
+#section-map-map {
+  z-index: 210;
+}
+
+#section-map-glitter {
+  z-index : 220;
+  height  : 100%;
+  overflow: hidden;
+}
+
+#section-map-overlay {
+  z-index   : 230;
+  background: rgba($blue, .75);
+}
+
+#section-map-overlay-calltoaction {
+  text-align: center;
+  position  : relative;
+  height    : 100vh;
+  
+  .container {
+    position   : absolute;
+    top        : 50%;
+    left       : 50%;
+    transform  : translate(-50%, -50%);
+    white-space: nowrap;
+    
+    a {
+      border   : 5px solid $purple;
+      padding  : 15px;
+      font-size: 1.5em;
+      margin   : 0;
+      
+      &:hover {
+        border-width: 15px 5px;
+        background  : $purple;
+      }
+    }
+  }
+}
+
+.glitter {
+  margin : 0;
+  padding: 0;
+  
+  .glitter-item {
+    @include equal-height;
+    position  : relative;
+    float     : left;
+    padding   : 0;
+    margin    : 0;
+    display   : block;
+    width     : (100%/3);
+    text-align: center;
+    overflow  : hidden;
+    
+    img {
+      position: absolute;
+      top     : 0;
+      left    : 0;
+      bottom  : 0;
+      right   : 0;
+      
+      &.vertical {
+        width : 100%;
+        height: auto;
+      }
+
+      &.horizontal {
+        height: 100%;
+        width : auto;
+      }
+    }
+  }
+}

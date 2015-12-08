@@ -1,5 +1,11 @@
 @extends('layout.master')
 
 @section('main')
-    @include('module.section')
+    @include('page.index.map')
+    @include('page.index.why')
+    @include('page.index.why')
+    @include('page.index.why')
+    @include('page.index.why')
+    @include('page.index.why')
+    @include('page.index.why')
 @endsection
