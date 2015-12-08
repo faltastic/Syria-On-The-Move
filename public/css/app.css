@@ -1252,13 +1252,13 @@ a {
 
 #navigation {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 950;
   border-top: 1px solid rgba(255, 37, 255, 0.65);
   border-bottom: 1px solid rgba(255, 37, 255, 0.65);
-  margin: 15px 0; }
+  margin: 25px 0; }
   #navigation::after {
     content: '';
     position: absolute;
@@ -1278,17 +1278,22 @@ a {
       list-style: none;
       margin: auto; }
       #navigation ul li a {
+        transition: .33s all ease-in-out;
         position: relative;
         z-index: 955;
         padding: 0 10px 1px;
         font-size: 1.75em;
         text-transform: uppercase;
         color: black;
-        border-top: 10px solid rgba(255, 37, 255, 0);
-        border-bottom: 10px solid rgba(255, 37, 255, 0); }
+        border-top: 0 solid rgba(255, 37, 255, 0);
+        border-bottom: 0 solid rgba(255, 37, 255, 0); }
+        #navigation ul li a:hover, #navigation ul li a:focus {
+          transition: .25s all ease-in; }
         #navigation ul li a:hover {
           color: #ff25ff;
-          border-color: rgba(255, 37, 255, 0.65); }
+          border-color: rgba(255, 37, 255, 0.65);
+          border-top-width: 10px;
+          border-bottom-width: 10px; }
       #navigation ul li.logo a {
         display: inline-block;
         width: 64px;
@@ -1297,7 +1302,7 @@ a {
           position: absolute;
           height: 64px;
           width: auto;
-          top: -42px;
+          top: -37px;
           left: 0; }
 
 .slideshow {
