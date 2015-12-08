@@ -11,6 +11,10 @@
 |
 */
 
+Route::controller('map/{lat}/{lng}/{lat2?}/{lng2?}', 'MapController');
+
 Route::controller('upload', 'UploadController');
+
+Route::controller('picture/{picture}/{identifier?}', 'PictureController');
 
 Route::controller('/', 'PageController');

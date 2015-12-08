@@ -75,6 +75,16 @@ class Picture extends Model
         return $this->files()->whereIdentifier('original')->get()->first();
     }
 
+    public function getThumbnail($identifier)
+    {
+        return $this->files()->whereIdentifier($identifier)->get()->first();
+    }
+
+    public function getUrl()
+    {
+        return action('PictureController@getIndex', [$this->id]);
+    }
+
     public function getExif()
     {
         $exif = [];
@@ -85,5 +95,23 @@ class Picture extends Model
         }
 
         return $exif;
+    }
+
+    public function scopeByGeoPoint($query, $lat, $lng)
+    {
+        $query->join('locations', function ($join) {
+            $join->on('pictures.id', '=', 'locations.picture_id');
+        })
+        ->whereBetween('lat', [$lat - .5, $lat + .5])
+        ->whereBetween('lng', [$lng - .5, $lng + .5]);
+    }
+
+    public function scopeByBoundingBox($query, $lat, $lng, $lat2, $lng2)
+    {
+        $query->join('locations', function ($join) {
+            $join->on('pictures.id', '=', 'locations.picture_id');
+        })
+        ->whereBetween('lat', [$lat, $lat2])
+        ->whereBetween('lng', [$lng, $lng2]);
     }
 }
