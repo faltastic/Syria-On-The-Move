@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('auth/twitter', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/twitter/callback', 'Auth\AuthController@handleProviderCallback');
+
 Route::controller('upload', 'UploadController');
 
 Route::controller('map/{lat}/{lng}/{lat2?}/{lng2?}', 'MapController');

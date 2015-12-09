@@ -24,15 +24,27 @@ return [
     ],
 
     'ses' => [
-        'key'    => env('SES_KEY'),
+        'key' => env('SES_KEY'),
         'secret' => env('SES_SECRET'),
         'region' => 'us-east-1',
     ],
 
     'stripe' => [
-        'model'  => App\User::class,
-        'key'    => env('STRIPE_KEY'),
+        'model' => App\User::class,
+        'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
+    ],
+
+    'facebook' => [
+        'client_id' => env('SOCIALITE_FACEBOOK_APP_ID'),
+        'client_secret' => env('SOCIALITE_FACEBOOK_APP_SECRET'),
+        'redirect' => 'sotm.dev/login/facebook',
+    ],
+
+    'twitter' => [
+        'client_id' => env('SOCIALITE_TWITTER_CLIENT_ID'),
+        'client_secret' => env('SOCIALITE_TWITTER_CLIENT_SECRET'),
+        'redirect' => 'sotm.dev/login/twitter',
     ],
 
 ];
