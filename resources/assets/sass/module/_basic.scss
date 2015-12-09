@@ -1,9 +1,30 @@
+@font-face {
+  font-family: 'Abel Regular';
+  src        : url('/fonts/abel-regular-webfont.eot');
+  src        : url('/fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/abel-regular-webfont.woff2') format('woff2'), url('/fonts/abel-regular-webfont.woff') format('woff'), url('/fonts/abel-regular-webfont.ttf') format('truetype'), url('/fonts/abel-regular-webfont.svg#abelregular') format('svg');
+  font-weight: normal;
+  font-style : normal;
+}
+
+@font-face {
+  font-family: 'Droid Arabic';
+  src        : url('/fonts/droidkufi-regular-webfont.eot');
+  src        : url('/fonts/droidkufi-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/droidkufi-regular-webfont.woff2') format('woff2'), url('/fonts/droidkufi-regular-webfont.woff') format('woff'), url('/fonts/droidkufi-regular-webfont.ttf') format('truetype'), url('/fonts/droidkufi-regular-webfont.svg#droid_arabic_kufiregular') format('svg');
+  font-weight: normal;
+  font-style : normal;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-size: 16px;
+  font-size     : 16px;
+  font-family   : 'Abel Regular';
+  line-height   : 1.6;
+  text-rendering: optimizeLegibility;
+  max-width     : 100%;
+  overflow-x    : hidden;
 }
 
 main#main {
@@ -19,10 +40,12 @@ a {
   @include transition-default;
   color          : $purple;
   text-decoration: none;
+  border-bottom  : 1px solid transparent;
   
   &:hover,
   &:focus {
-    color: $blue;
+    
+    // TODO: default link hover effect
   }
 }
 
@@ -31,5 +54,6 @@ a {
 }
 
 .ar {
-  direction: rtl;
+  direction  : rtl;
+  font-family: 'Droid Arabic';
 }

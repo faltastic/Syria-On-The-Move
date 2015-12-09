@@ -46,7 +46,7 @@
         @include transition-default;
         position      : relative;
         z-index       : 955;
-        padding       : 0 10px 1px;
+        padding       : 5px 10px;
         font-size     : 1.75em;
         text-transform: uppercase;
         color         : $black;
@@ -70,7 +70,7 @@
           position: absolute;
           height  : 64px;
           width   : auto;
-          top     : -37px;
+          top     : -27px;
           left    : 0;
         }
       }

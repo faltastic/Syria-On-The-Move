@@ -1,16 +1,17 @@
 <section class="page-section">
-    <h1>Section Title</h1>
-    <ul class="slideshow">
-        <li><img src="#" /></li>
+    <div class="section-title">
+        <h1>@yield('title')</h1>
+    </div>
 
-    </ul>
+    @yield('slideshow')
+
     <article>
-        <div class="left">
-            LEFT
+        <div class="left ar">
+            @yield('left')
         </div>
 
         <div class="right">
-            RIGHT
+            @yield('right')
         </div>
     </article>
 </section>
