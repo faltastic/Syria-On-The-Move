@@ -1,16 +1,31 @@
 .slideshow {
-  @include shadowed-wrapper($gray_lighter);
-  white-space: nowrap;
-  margin     : 0 0 30px;
-  padding    : 0;
+  padding: 0;
+  margin : 0;
   
-  li {
-    white-space: nowrap;
-    display    : inline-block;
+  li,
+  li.slick-slide {
+    display: inline-block;
     
     img {
-      width : 100%;
-      height: auto;
+      display: inline-block;
+    }
+  }
+
+  .slick-dots {
+    position: static;
+    
+    button {
+      width : 25px;
+      height: 25px;
+      
+      &::before {
+        font-size: 25px;
+        color    : rgba($purple, .75);
+      }
+    }
+
+    .slick-active button::before {
+      color: rgba($purple, 1);
     }
   }
 }

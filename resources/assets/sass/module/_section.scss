@@ -29,9 +29,10 @@ section.page-section {
       position  : relative;
       z-index   : 201;
       display   : inline-block;
-      padding   : 0 15px;
-      color     : $purple;
       background: $white;
+      padding   : 0 15px;
+      font-size : 4em;
+      color     : $purple;
     }
   }
 
@@ -41,6 +42,23 @@ section.page-section {
     .left,
     .right {
       @include two-column;
+      font-size: 2.5em;
+    }
+
+    .left > p {
+      padding-right: 15px;
+      
+      @include gridle_state( mobile ) {
+        padding-right: 0;
+      }
+    }
+
+    .right > p {
+      padding-left: 15px;
+      
+      @include gridle_state( mobile ) {
+        padding-left: 0;
+      }
     }
   }
 }

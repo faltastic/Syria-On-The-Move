@@ -1,6 +1,6 @@
 @mixin container {
   @include gridle_container();
-  max-width: 960px;
+  max-width: 1280px;
   margin   : 0 auto;
   
   @include gridle_state( mobile ) {
@@ -23,6 +23,14 @@
 
   @include gridle_state( tablet ) {
     @include gridle_grid( 6 );
+    
+    &.left {
+      padding-right: 15px;
+    }
+
+    &.right {
+      padding-left: 15px;
+    }
   }
 
   @include gridle_state( desktop ) {
