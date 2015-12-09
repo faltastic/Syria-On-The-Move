@@ -11,7 +11,7 @@
     <title></title>
 
     {!! HTML::style(elixir('css/lib.css')) !!}
-    @yield('style')
+        @yield('style')
     {!! HTML::style(elixir('css/app.css')) !!}
 </head>
 
@@ -22,14 +22,10 @@
         @yield('main')
     </main>
 
-    <footer>
-        <div class="container">
-            Footer
-        </div>
-    </footer>
+    @include('layout.footer')
 
     {!! HTML::script(elixir('js/lib.js')) !!}
-    @yield('script')
+        @yield('script')
     {!! HTML::script(elixir('js/app.js')) !!}
 
 </body>

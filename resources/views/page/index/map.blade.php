@@ -7,7 +7,7 @@
         <div class="glitter">
             @foreach(App\Picture::random(9) as $picture)
 
-                <?php $file = $picture->getThumbnail('thumb-550-x'); ?>
+                <?php $file = $picture->getThumbnail('thumb-550-x') ?>
 
 
                 <div class="glitter-item"><img src="{{ $file->getUrl() }}" class="{!! $file->vertical()?'vertical':'horizontal' !!}"/></div>

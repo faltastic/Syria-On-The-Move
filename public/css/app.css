@@ -1,4 +1,4 @@
-.container:after, #navigation ul:after, section.page-section article:after {
+.container:after, .c:after, #navigation ul:after, section.page-section article:after {
   content: "";
   display: table;
   clear: both; }
@@ -1244,9 +1244,6 @@ main#main {
 footer {
   background: #e8f3ff;
   padding: 30px 0; }
-  footer .container {
-    max-width: 960px;
-    margin: 0 auto; }
 
 a {
   transition: .33s all ease-in-out;
@@ -1256,6 +1253,10 @@ a {
     transition: .25s all ease-in; }
   a:hover, a:focus {
     color: #e8f3ff; }
+
+.c {
+  max-width: 960px;
+  margin: 0 auto; }
 
 .ar {
   direction: rtl; }
@@ -1269,13 +1270,15 @@ a {
     position: fixed;
     top: 0;
     bottom: auto; }
+    #navigation-wrapper.sticky #navigation {
+      background: rgba(255, 255, 255, 0.65); }
 
 #navigation {
   position: relative;
   margin: 25px 0;
   border-top: 1px solid rgba(255, 37, 255, 0.65);
   border-bottom: 1px solid rgba(255, 37, 255, 0.65);
-  background: rgba(255, 255, 255, 0.65); }
+  transition: background .33s ease-in-out; }
   #navigation::after {
     content: '';
     position: absolute;

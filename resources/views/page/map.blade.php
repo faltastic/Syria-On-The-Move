@@ -1,9 +1,11 @@
 @extends('layout.master')
 
 @section('main')
-    <div id="map"></div>
+    <section class="page-section" id="section-map">
+        <div id="map"></div>
+    </section>
 
-    @include('picture.upload');
+    @include('picture.upload')
 
 @endsection
 

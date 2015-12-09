@@ -1,23 +1,28 @@
-<h1>Upload</h1>
+<section class="page-section">
+    <div class="section-title">
+        <h1>Upload</h1>
+    </div>
+    <div  class="c">
+        {!! Form::open(['url' => action('UploadController@postIndex'), 'files' => true]) !!}
 
-{!! Form::open(['url' => action('UploadController@postIndex'), 'files' => true]) !!}
-
-    {!! Form::file('picture') !!}
-    q
-    {!! Form::text('q') !!}
-    lat
-    {!! Form::text('lat') !!}
-    lng
-    {!! Form::text('lng') !!}
+            {!! Form::file('picture') !!}
+            q
+            {!! Form::text('q') !!}
+            lat
+            {!! Form::text('lat') !!}
+            lng
+            {!! Form::text('lng') !!}
 
 
-    WIP
-    <ul>
-        <li>Either way use q or lat & lng</li>
-        <li>q = Query String for Geocoding Service</li>
-    </ul>
-    </ul>
+            WIP
+            <ul>
+                <li>Either way use q or lat & lng</li>
+                <li>q = Query String for Geocoding Service</li>
+            </ul>
+            </ul>
 
-    {!! Form::submit('upload') !!}
+            {!! Form::submit('upload') !!}
 
-{!! Form::close(); !!}
+        {!! Form::close() !!}
+    </div>
+</section>
