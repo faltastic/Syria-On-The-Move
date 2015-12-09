@@ -2,6 +2,9 @@
 
 @section('main')
     <div id="map"></div>
+
+    @include('picture.upload');
+
 @endsection
 
 @section('style')
