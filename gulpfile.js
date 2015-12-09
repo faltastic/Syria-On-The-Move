@@ -29,8 +29,7 @@ elixir(function(mix) {
 			],
 			'public/css/app.css')
 		.scripts([
-				'/jquery/dist/jquery.js',
-				'/sticky/jquery.sticky.js'
+				'/jquery/dist/jquery.js'
 			],
 			'public/js/lib.js', 'vendor/bower_components')
 		.scripts([

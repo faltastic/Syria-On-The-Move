@@ -1,64 +1,75 @@
+// We need this wrapper for Chrome, cause Chrome is not calculating the outerHeight correctly with jQuery
+#navigation-wrapper {
+  position: absolute;
+  bottom  : 0;
+  width   : 100%;
+  z-index : 950;
+  
+  &.sticky {
+    position: fixed;
+    top     : 0;
+    bottom  : auto;
+  }
+}
+
 #navigation {
-    position     : absolute;
-    bottom       : 0;
-    width        : 100%;
-    z-index      : 950;
-    margin       : 25px 0;
-    border-top   : 1px solid rgba($purple, .65);
-    border-bottom: 1px solid rgba($purple, .65);
-    background   : rgba($white, 0.65);
+  position     : relative;
+  margin       : 25px 0;
+  border-top   : 1px solid rgba($purple, .65);
+  border-bottom: 1px solid rgba($purple, .65);
+  background   : rgba($white, 0.65);
+  
+  &::after {
+    content   : '';
+    position  : absolute;
+    top       : 50%;
+    display   : inline-block;
+    width     : 100%;
+    border-top: 1px solid rgba($purple, .65);
+    z-index   : 951;
+  }
+
+  ul {
+    @include container;
+    padding: 0;
+    display: flex;
     
-    &::after {
-        content   : '';
-        position  : absolute;
-        top       : 50%;
-        display   : inline-block;
-        width     : 100%;
-        border-top: 1px solid rgba($purple, .65);
-        z-index   : 951;
-    }
-
-    ul {
-        @include container;
-        padding: 0;
-        display: flex;
+    li {
+      list-style: none;
+      margin    : auto;
+      
+      a {
+        @include transition-default;
+        position      : relative;
+        z-index       : 955;
+        padding       : 0 10px 1px;
+        font-size     : 1.75em;
+        text-transform: uppercase;
+        color         : $black;
+        border-top    : 0 solid rgba($purple, 0);
+        border-bottom : 0 solid rgba($purple, 0);
         
-        li {
-            list-style: none;
-            margin    : auto;
-            
-            a {
-                @include transition-default;
-                position      : relative;
-                z-index       : 955;
-                padding       : 0 10px 1px;
-                font-size     : 1.75em;
-                text-transform: uppercase;
-                color         : $black;
-                border-top    : 0 solid rgba($purple, 0);
-                border-bottom : 0 solid rgba($purple, 0);
-                
-                &:hover {
-                    color              : $purple;
-                    border-color       : rgba($purple, .65);
-                    border-top-width   : 10px;
-                    border-bottom-width: 10px;
-                }
-            }
-
-            &.logo a {
-                display: inline-block;
-                width  : 64px;
-                border : 0;
-                
-                img {
-                    position: absolute;
-                    height  : 64px;
-                    width   : auto;
-                    top     : -37px;
-                    left    : 0;
-                }
-            }
+        &:hover {
+          color              : $purple;
+          border-color       : rgba($purple, .65);
+          border-top-width   : 10px;
+          border-bottom-width: 10px;
         }
+      }
+
+      &.logo a {
+        display: inline-block;
+        width  : 64px;
+        border : 0;
+        
+        img {
+          position: absolute;
+          height  : 64px;
+          width   : auto;
+          top     : -37px;
+          left    : 0;
+        }
+      }
     }
+  }
 }

@@ -8,18 +8,21 @@
 })(jQuery);
 
 
-jQuery(document).ready(function($) {
-
-
+(function() {
 	$(window).scroll(function(e) {
 		var scrollTop = $(window).scrollTop();
 
-		var sectionMap = $('#section-map').outerHeight();
-		var navigation = $('#navigation-wrapper').outerHeight();
+    var firstSection = $('#section-map').outerHeight();
 
-		$('#navigation-wrapper')
-			.toggleClass('sticky', scrollTop > (sectionMap - navigation))
+    console.log(firstSection);
+    console.log(scrollTop);
+    console.log('=====');
+
+    
+		$('#navigation')
+			.toggleClass('top', scrollTop > 1400)
+			.toggleClass('visible', scrollTop <= 1400 && scrollTop > 1505 - $(window).height());
 	});
-});
+})(jQuery);
 
 //# sourceMappingURL=app.js.map

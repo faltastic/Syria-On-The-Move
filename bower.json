@@ -31,7 +31,6 @@
     "leaflet": "~0.7.7",
     "leaflet.markercluster": "~0.4.0",
     "leaflet.Photo": "turban/Leaflet.Photo",
-    "Leaflet.TileLegend": "yohanboniface/Leaflet.TileLegend",
-    "sticky": "garand/sticky"
+    "Leaflet.TileLegend": "yohanboniface/Leaflet.TileLegend"
   }
 }
