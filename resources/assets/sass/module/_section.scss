@@ -26,38 +26,50 @@ section.page-section {
     }
 
     h1 {
-      position  : relative;
-      z-index   : 201;
-      display   : inline-block;
-      background: $white;
-      padding   : 0 15px;
-      font-size : 4em;
-      color     : $purple;
+      position      : relative;
+      z-index       : 201;
+      display       : inline-block;
+      background    : $white;
+      padding       : 0 15px;
+      font-size     : 4em;
+      color         : $purple;
+      text-transform: uppercase;
     }
   }
 
   article {
     @include container;
     
+    h2 {
+      margin-bottom: 0;
+      border-bottom: 1px solid $purple;
+    }
+
     .left,
     .right {
       @include two-column;
       font-size: 2.5em;
     }
 
-    .left > p {
-      padding-right: 15px;
-      
-      @include gridle_state( mobile ) {
-        padding-right: 0;
+    .left {
+      & > * {
+        margin-right: 25px;
+        
+        @include gridle_state( mobile ) {
+          margin-right: 0;
+          padding     : 0 5px;
+        }
       }
     }
 
-    .right > p {
-      padding-left: 15px;
-      
-      @include gridle_state( mobile ) {
-        padding-left: 0;
+    .right {
+      & > * {
+        margin-left: 25px;
+        
+        @include gridle_state( mobile ) {
+          margin-left: 0;
+          padding    : 0 5px;
+        }
       }
     }
   }

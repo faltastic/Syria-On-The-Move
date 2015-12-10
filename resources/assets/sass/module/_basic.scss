@@ -19,12 +19,23 @@
 }
 
 body {
-  font-size     : 16px;
   font-family   : 'Abel Regular';
   line-height   : 1.6;
   text-rendering: optimizeLegibility;
   max-width     : 100%;
   overflow-x    : hidden;
+  
+  @include gridle_state( mobile ) {
+    font-size: 10px;
+  }
+
+  @include gridle_state( tablet ) {
+    font-size: 16px;
+  }
+
+  @include gridle_state( desktop ) {
+    font-size: 16px;
+  }
 }
 
 main#main {
@@ -47,6 +58,12 @@ a {
     
     // TODO: default link hover effect
   }
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
 }
 
 .c {

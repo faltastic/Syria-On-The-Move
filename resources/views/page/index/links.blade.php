@@ -1,17 +1,15 @@
-<section class="page-section">
+<section id="links" class="page-section">
     <div class="section-title">
-        <h1>@yield('title')</h1>
+        <h1>Links</h1>
     </div>
-
-    @yield('slideshow')
 
     <article>
         <div class="left ar">
-            @yield('left')
+            left
         </div>
 
         <div class="right">
-            @yield('right')
+            right
         </div>
     </article>
 </section>

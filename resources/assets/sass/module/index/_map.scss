@@ -58,8 +58,9 @@
     }
 
     a {
-      display: inline-block;
-      padding: 5px 10px;
+      display      : inline-block;
+      padding      : 5px 10px;
+      border-radius: 3px;
       
       &:hover {
         color     : $white;
