@@ -7,6 +7,14 @@ use App\Http\Requests\Request;
 use Geocoder\Provider\GoogleMaps;
 use Ivory\HttpAdapter\CurlHttpAdapter;
 
+/**
+ * @property int $id
+ * @property int $picture_id
+ * @property float $lat
+ * @property float $lng
+ * @property Carbon/Carbon $created_at
+ * @property Carbon/Carbon $updated_at
+ */
 class Location extends Model
 {
     public function picture()

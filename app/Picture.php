@@ -7,6 +7,11 @@ use InterventionImage;
 use App\Events\PictureHasBeenCreated;
 use App\Http\Requests\Request;
 
+/**
+ * @property int $id
+ * @property Carbon/Carbon $created_at
+ * @property Carbon/Carbon $updated_at
+ */
 class Picture extends Model
 {
     public function files()
