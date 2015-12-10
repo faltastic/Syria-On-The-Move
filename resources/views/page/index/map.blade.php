@@ -1,18 +1,17 @@
 <section class="page-section" id="section-map">
     <div id="section-map-map">
-        map
+        {!! HTML::image(asset('img/land/backmap.png')) !!}
     </div>
 
     <div id="section-map-glitter">
-        <div class="glitter">
-            @foreach(App\Picture::random(9) as $picture)
-
-                <?php $file = $picture->getThumbnail('thumb-550-x') ?>
-
-
-                <div class="glitter-item"><img src="{{ $file->getUrl() }}" class="{!! $file->vertical()?'vertical':'horizontal' !!}"/></div>
-            @endforeach
-        </div>
+        <ul class="glitter">
+            <li class="glitter-item">{!! HTML::image(asset('img/land/1.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/2.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/3.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/4.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/5.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/6.png')) !!}</li>
+        </ul>
     </div>
 
     <div id="section-map-overlay">
