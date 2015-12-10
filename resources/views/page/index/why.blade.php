@@ -1,18 +1,15 @@
-@extends('module.section')
+<section id="why" class="page-section">
+    <div class="section-title">
+        <h1>Why</h1>
+    </div>
 
-@section('title')
-    Why
-@overwrite
+    <article>
+        <div class="left ar">
+            left
+        </div>
 
-@section('slideshow')
-    slideshow
-@overwrite
-
-
-@section('left')
-    left
-@overwrite
-
-@section('right')
-    right
-@overwrite
+        <div class="right">
+            right
+        </div>
+    </article>
+</section>

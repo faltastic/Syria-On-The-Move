@@ -1,0 +1,50 @@
+#team {
+  
+}
+
+section.page-section {
+  text-align: center;
+  
+  article.team-member {
+    margin-bottom: 50px;
+    
+    @include gridle_state( mobile ) {
+      @include gridle_grid( 6 );
+    }
+
+    @include gridle_state( tablet ) {
+      @include gridle_grid( 4 );
+    }
+
+    @include gridle_state( desktop ) {
+      @include gridle_grid( 3 );
+    }
+
+    h2 {
+      font-size     : 2em;
+      text-transform: uppercase;
+      text-align    : center;
+      color         : $purple;
+      border-bottom : 0;
+      margin-bottom : 20px;
+    }
+
+    .member-photo {
+      display: inline-block;
+      
+      img {
+        @include gridle_state( mobile ) {
+          @include circle(150px);
+        }
+
+        @include gridle_state( tablet ) {
+          @include circle(250px);
+        }
+
+        @include gridle_state( desktop ) {
+          @include circle(250px);
+        }
+      }
+    }
+  }
+}

@@ -59,3 +59,9 @@
     transition: .25s all ease-in;
   }
 }
+
+@mixin circle($width) {
+  width        : $width;
+  height       : $width;
+  border-radius: $width;
+}
