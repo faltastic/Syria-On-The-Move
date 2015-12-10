@@ -42,8 +42,6 @@
 
 		var waitI = wait();
 
-		console.log(i, waitI);
-
 		$(elem).fadeloop({
 			wait: waitI
 		});

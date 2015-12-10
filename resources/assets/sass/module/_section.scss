@@ -29,11 +29,11 @@ section.page-section {
       position      : relative;
       z-index       : 201;
       display       : inline-block;
-      background    : $white;
       padding       : 0 15px;
       font-size     : 4em;
       color         : $purple;
       text-transform: uppercase;
+      text-shadow   : 10px 0 0 $white, -10px 0 0 $white, 0 10px 0 $white, 0 -10px 0 $white, 5px 5px $white, -5px -5px 0 $white, 5px -5px 0 $white, -5px 5px 0 $white;
     }
   }
 

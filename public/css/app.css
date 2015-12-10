@@ -68,7 +68,7 @@ h3 {
   @media screen and (max-width: 480px) {
     .c section.page-section article .left, section.page-section article .c .left, .c
     section.page-section article .right,
-    section.page-section article .c .right, .c .glitter .glitter-item, .glitter .c .glitter-item, .c section.page-section article.team-member, section.page-section .c article.team-member {
+    section.page-section article .c .right, .c #section-map-overlay-calltoaction-container, .c .glitter .glitter-item, .glitter .c .glitter-item, .c section.page-section article.team-member, section.page-section .c article.team-member {
       display: inline-block;
       min-height: 1px;
       float: left;
@@ -102,7 +102,7 @@ h3 {
     top: 0;
     bottom: auto; }
     #navigation-wrapper.sticky #navigation {
-      background: rgba(255, 255, 255, 0.65); }
+      background: rgba(255, 255, 255, 0.85); }
 
 #navigation {
   position: relative;
@@ -208,11 +208,11 @@ section.page-section {
       position: relative;
       z-index: 201;
       display: inline-block;
-      background: white;
       padding: 0 15px;
       font-size: 4em;
       color: #ff25ff;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-shadow: 10px 0 0 white, -10px 0 0 white, 0 10px 0 white, 0 -10px 0 white, 5px 5px white, -5px -5px 0 white, 5px -5px 0 white, -5px 5px 0 white; }
   section.page-section article {
     max-width: 1280px;
     margin: 0 auto; }
@@ -285,14 +285,28 @@ section.page-section {
 
 #section-map-overlay-calltoaction-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   padding: 2%;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
-  text-align: center; }
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  @media screen and (max-width: 480px) {
+    #section-map-overlay-calltoaction-container {
+      width: 100%;
+      top: 0;
+      left: 0;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      margin: 15px; } }
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    #section-map-overlay-calltoaction-container {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); } }
   #section-map-overlay-calltoaction-container img {
     margin-bottom: 30px; }
   #section-map-overlay-calltoaction-container .slogan {

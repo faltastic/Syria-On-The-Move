@@ -41,14 +41,31 @@
 
 #section-map-overlay-calltoaction-container {
   position     : absolute;
-  top          : 50%;
-  left         : 50%;
-  transform    : translate(-50%, -50%);
   padding      : 2%;
   background   : rgba(255, 255, 255, .9);
   border-radius: 5px;
   text-align   : center;
   
+  @include gridle_state( mobile ) {
+    @include gridle_grid(12);
+    top      : 0;
+    left     : 0;
+    transform: translate(0, 0);
+    margin   : 15px;
+  }
+
+  @include gridle_state( tablet ) {
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include gridle_state( desktop ) {
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+  }
+
   img {
     margin-bottom: 30px;
   }

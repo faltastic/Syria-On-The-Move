@@ -10,6 +10,12 @@
             <li class="glitter-item">{!! HTML::image(asset('img/land/3.png')) !!}</li>
             <li class="glitter-item">{!! HTML::image(asset('img/land/4.png')) !!}</li>
             <li class="glitter-item">{!! HTML::image(asset('img/land/5.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/1.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/3.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/2.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/3.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/1.png')) !!}</li>
+            <li class="glitter-item">{!! HTML::image(asset('img/land/2.png')) !!}</li>
             <li class="glitter-item">{!! HTML::image(asset('img/land/6.png')) !!}</li>
         </ul>
     </div>
