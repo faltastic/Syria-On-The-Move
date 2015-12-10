@@ -8,6 +8,17 @@ use File as Filesystem;
 use InterventionImage;
 use Illuminate\Http\Response;
 
+/**
+ * @property int $id
+ * @property int $picture_id
+ * @property string $identifier
+ * @property string $mime
+ * @property string $extension
+ * @property int $width
+ * @property int $height
+ * @property Carbon/Carbon $created_at
+ * @property Carbon/Carbon $updated_at
+ */
 class File extends Model
 {
     public static $dir = 'pictures/';
