@@ -1,0 +1,213 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gulp-watch' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.6
+4 verbose install initial load of /var/www/sotm/package.json
+5 verbose installManyTop reading scoped package data from /var/www/sotm/node_modules/gulp/package.json
+6 verbose installManyTop reading scoped package data from /var/www/sotm/node_modules/laravel-elixir/package.json
+7 verbose readDependencies loading dependencies from /var/www/sotm/package.json
+8 silly cache add args [ 'gulp-watch', null ]
+9 verbose cache add spec gulp-watch
+10 silly cache add parsed spec { raw: 'gulp-watch',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'gulp-watch',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 silly addNamed gulp-watch@*
+12 verbose addNamed "*" is a valid semver range for gulp-watch
+13 silly addNameRange { name: 'gulp-watch', range: '*', hasData: false }
+14 silly mapToRegistry name gulp-watch
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/gulp-watch
+18 verbose addNameRange registry:https://registry.npmjs.org/gulp-watch not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/gulp-watch
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 2:52:23 PM
+22 verbose request id 2fd6a3969f0f174f
+23 verbose etag "6NLM34274NP0HJL1YZFQZ6HDH"
+24 http request GET https://registry.npmjs.org/gulp-watch
+25 http 200 https://registry.npmjs.org/gulp-watch
+26 silly get cb [ 200,
+26 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly get     etag: '"E0QO24I42B2RWYT97U621H2JJ"',
+26 silly get     'content-type': 'application/json',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     'content-length': '116578',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Wed, 16 Dec 2015 13:52:23 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '3',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-ams4122-AMS',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1450273943.620864,VS0,VE1',
+26 silly get     vary: 'Accept' } ]
+27 verbose get saving gulp-watch to /home/you/.npm/registry.npmjs.org/gulp-watch/.cache.json
+28 silly addNameRange number 2 { name: 'gulp-watch', range: '*', hasData: true }
+29 silly addNameRange versions [ 'gulp-watch',
+29 silly addNameRange   [ '0.0.1',
+29 silly addNameRange     '0.0.2',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.0.4',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.2.4',
+29 silly addNameRange     '0.2.5',
+29 silly addNameRange     '0.2.6',
+29 silly addNameRange     '0.2.7',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.3.2',
+29 silly addNameRange     '0.3.3',
+29 silly addNameRange     '0.3.4',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1',
+29 silly addNameRange     '0.4.2',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.5.2',
+29 silly addNameRange     '0.5.3',
+29 silly addNameRange     '0.5.4',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '0.6.1',
+29 silly addNameRange     '0.6.2',
+29 silly addNameRange     '0.6.3',
+29 silly addNameRange     '0.6.4',
+29 silly addNameRange     '0.6.5',
+29 silly addNameRange     '0.6.6',
+29 silly addNameRange     '0.7.0-alpha2',
+29 silly addNameRange     '0.6.6-1',
+29 silly addNameRange     '0.6.7',
+29 silly addNameRange     '0.6.8',
+29 silly addNameRange     '0.7.0-alpha3',
+29 silly addNameRange     '0.6.9',
+29 silly addNameRange     '0.6.10',
+29 silly addNameRange     '0.7.0',
+29 silly addNameRange     '0.7.1',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.0.2',
+29 silly addNameRange     '1.0.3',
+29 silly addNameRange     '1.0.4',
+29 silly addNameRange     '1.0.5',
+29 silly addNameRange     '1.0.6',
+29 silly addNameRange     '1.0.7',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.0.8',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '2.0.0',
+29 silly addNameRange     '3.0.0',
+29 silly addNameRange     '4.0.0',
+29 silly addNameRange     '4.0.1',
+29 silly addNameRange     '4.0.2',
+29 silly addNameRange     '4.0.3',
+29 silly addNameRange     '4.1.0',
+29 silly addNameRange     '4.1.1',
+29 silly addNameRange     '4.2.0',
+29 silly addNameRange     '4.2.1',
+29 silly addNameRange     '4.2.2',
+29 silly addNameRange     '4.2.3',
+29 silly addNameRange     '4.2.4',
+29 silly addNameRange     '4.2.5',
+29 silly addNameRange     '4.3.0',
+29 silly addNameRange     '4.3.1',
+29 silly addNameRange     '4.3.2',
+29 silly addNameRange     '4.3.3',
+29 silly addNameRange     '4.3.4',
+29 silly addNameRange     '4.3.5' ] ]
+30 silly addNamed gulp-watch@4.3.5
+31 verbose addNamed "4.3.5" is a plain semver version for gulp-watch
+32 silly cache afterAdd gulp-watch@4.3.5
+33 verbose afterAdd /home/you/.npm/gulp-watch/4.3.5/package/package.json not in flight; writing
+34 verbose afterAdd /home/you/.npm/gulp-watch/4.3.5/package/package.json written
+35 silly install resolved [ { name: 'gulp-watch',
+35 silly install resolved     version: '4.3.5',
+35 silly install resolved     description: 'Watch, that actually is an endless stream',
+35 silly install resolved     main: 'index.js',
+35 silly install resolved     keywords: [ 'gulp', 'watch', 'gulpplugin' ],
+35 silly install resolved     scripts:
+35 silly install resolved      { test: 'mocha -R spec test/test-*',
+35 silly install resolved        coverage: 'istanbul cover node_modules/.bin/_mocha --report html -- -R spec',
+35 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+35 silly install resolved     files: [ 'index.js' ],
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'git://github.com/floatdrop/gulp-watch.git' },
+35 silly install resolved     author: { name: 'Vsevolod Strukchinsky' },
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     bugs: { url: 'https://github.com/floatdrop/gulp-watch/issues' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { coveralls: '^2.7.0',
+35 silly install resolved        istanbul: '^0.3.0',
+35 silly install resolved        mocha: '^2',
+35 silly install resolved        'mocha-lcov-reporter': '0.0.2',
+35 silly install resolved        proxyquire: '^1.0.1',
+35 silly install resolved        rimraf: '^2.2.8',
+35 silly install resolved        should: '~7',
+35 silly install resolved        sinon: '^1.9.1',
+35 silly install resolved        'stream-assert': '^2.0.1',
+35 silly install resolved        'strip-ansi': '^3.0.0' },
+35 silly install resolved     dependencies:
+35 silly install resolved      { anymatch: '^1.3.0',
+35 silly install resolved        chokidar: '^1.0.3',
+35 silly install resolved        glob: '^5.0.13',
+35 silly install resolved        glob2base: '0.0.12',
+35 silly install resolved        'gulp-util': '^3.0.6',
+35 silly install resolved        'path-is-absolute': '^1.0.0',
+35 silly install resolved        'readable-stream': '^2.0.1',
+35 silly install resolved        vinyl: '^0.5.0',
+35 silly install resolved        'vinyl-file': '^1.2.1' },
+35 silly install resolved     engine: 'node >= 0.10',
+35 silly install resolved     gitHead: '1c9f9a95bf9c5b89e08be254f086651dce5849d5',
+35 silly install resolved     homepage: 'https://github.com/floatdrop/gulp-watch',
+35 silly install resolved     _id: 'gulp-watch@4.3.5',
+35 silly install resolved     _shasum: '3a94584d653f5c7f1aadd8d7791174b5fab048af',
+35 silly install resolved     _from: 'gulp-watch@*',
+35 silly install resolved     _npmVersion: '2.13.3',
+35 silly install resolved     _nodeVersion: '3.0.0',
+35 silly install resolved     _npmUser: { name: 'floatdrop', email: 'floatdrop@gmail.com' },
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '3a94584d653f5c7f1aadd8d7791174b5fab048af',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/gulp-watch/-/gulp-watch-4.3.5.tgz' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp-watch/-/gulp-watch-4.3.5.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install gulp-watch@4.3.5 into /var/www/sotm
+37 info installOne gulp-watch@4.3.5
+38 verbose installOne of gulp-watch to /var/www/sotm not in flight; installing
+39 warn locking Error: EACCES, open '/home/you/.npm/_locks/gulp-watch-be983885ad92c720.lock'
+39 warn locking     at Error (native)
+39 warn locking  /home/you/.npm/_locks/gulp-watch-be983885ad92c720.lock failed { [Error: EACCES, open '/home/you/.npm/_locks/gulp-watch-be983885ad92c720.lock']
+39 warn locking   errno: -13,
+39 warn locking   code: 'EACCES',
+39 warn locking   path: '/home/you/.npm/_locks/gulp-watch-be983885ad92c720.lock' }
+40 verbose stack Error: Attempt to unlock /var/www/sotm/node_modules/gulp-watch, which hasn't been locked
+40 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1017:5)
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1021:20
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+40 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+41 verbose cwd /var/www/sotm
+42 error Linux 3.13.0-35-generic
+43 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "gulp-watch"
+44 error node v0.12.6
+45 error npm  v2.11.2
+46 error Attempt to unlock /var/www/sotm/node_modules/gulp-watch, which hasn't been locked
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]

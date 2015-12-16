@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 @font-face {
   font-family: 'Abel Regular';
   src: url("/fonts/abel-regular-webfont.eot");
@@ -90,8 +91,11 @@ h3 {
 
 .ar {
   direction: rtl;
-  font-family: 'Droid Arabic';
-  color: red !important; }
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  /*font-family: 'Droid Arabic';
+  
+  color: red !important;
+  */ }
 
 #navigation-wrapper {
   position: absolute;
@@ -185,7 +189,8 @@ h3 {
       color: #ff25ff; }
 
 section.page-section {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px; }
   section.page-section:first-child {
@@ -238,12 +243,16 @@ section.page-section {
           section.page-section article .left.right,
           section.page-section article .right.right {
             padding-left: 15px; } }
-    section.page-section article .left > * {
-      margin-right: 25px; }
-      @media screen and (max-width: 480px) {
-        section.page-section article .left > * {
-          margin-right: 0;
-          padding: 0 5px; } }
+    section.page-section article .left {
+      font-size: 2.25em; }
+    section.page-section article .left {
+      text-align: right; }
+      section.page-section article .left > * {
+        margin-right: 25px; }
+        @media screen and (max-width: 480px) {
+          section.page-section article .left > * {
+            margin-right: 0;
+            padding: 0 5px; } }
     section.page-section article .right {
       text-align: left; }
       section.page-section article .right > * {
@@ -270,7 +279,7 @@ section.page-section {
 #section-map-map {
   z-index: 210; }
   #section-map-map img {
-    width: 100%;
+    width: 50%;
     height: auto; }
 
 #section-map-glitter {
@@ -286,16 +295,36 @@ section.page-section {
   position: relative;
   height: 100vh; }
 
+#section-map-overlay-calltoaction-container :hover {
+  background: rgba(255, 255, 255, 0.98); }
+
 #section-map-overlay-calltoaction-container {
-  position: absolute;
   padding: 2%;
   background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  height: auto;
+  top: 33vh;
+  z-index: 2;
   border-radius: 5px;
   text-align: center;
+  width: 40%;
+  /*
+  position     : absolute;
+  padding      : 2%;
+  background   : rgba(255, 255, 255, .9);
+  border-radius: 5px;
+  text-align   : center;
+  */
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+  @media screen and (max-width: 480px) {
+    #section-map-overlay-calltoaction-container {
+      width: 80%; } }
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    #section-map-overlay-calltoaction-container {
+      width: 50%; } }
   @media screen and (max-width: 480px) {
     #section-map-overlay-calltoaction-container {
       width: 100%;
@@ -311,14 +340,21 @@ section.page-section {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); } }
   #section-map-overlay-calltoaction-container img {
-    margin-bottom: 30px; }
+    margin-bottom: 1.5em;
+    width: 40%;
+    height: auto; }
   #section-map-overlay-calltoaction-container .slogan {
     text-align: left;
     padding: 25px 15px;
     border-top: 1px solid #ff25ff;
-    font-size: 2em; }
+    font-size: 1.6em;
+    font-size: 1.6em; }
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+      #section-map-overlay-calltoaction-container .slogan {
+        font-size: 1.4em; } }
     #section-map-overlay-calltoaction-container .slogan.ar {
-      text-align: right; }
+      text-align: right;
+      font-size: 1.3em; }
     #section-map-overlay-calltoaction-container .slogan a {
       display: inline-block;
       padding: 5px 10px;

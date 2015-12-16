@@ -6,6 +6,9 @@
   font-style : normal;
 }
 
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+
 @font-face {
   font-family: 'Droid Arabic';
   src        : url('/fonts/droidkufi-regular-webfont.eot');
@@ -72,8 +75,9 @@ h3 {
 
 .ar {
   direction  : rtl;
-  font-family: 'Droid Arabic';
-  /*
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  /*font-family: 'Droid Arabic';
+  
   color: red !important;
   */
 }

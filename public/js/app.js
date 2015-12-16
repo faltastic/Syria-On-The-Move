@@ -66,10 +66,10 @@ jQuery(document).ready(function($) {
 		autoplay: true,
 		autoplaySpeed: 2500,
 		speed: 850,
-		slidesToShow: 2,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		cssEase: 'linear',
-		centerMode: true,
+		centerMode: false,
 		focusOnSelect: true,
 		responsive: [{
 				breakpoint: 1024,
