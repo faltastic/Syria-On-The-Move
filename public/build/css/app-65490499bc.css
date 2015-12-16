@@ -90,7 +90,8 @@ h3 {
 
 .ar {
   direction: rtl;
-  font-family: 'Droid Arabic'; }
+  font-family: 'Droid Arabic';
+  color: red !important; }
 
 #navigation-wrapper {
   position: absolute;
@@ -243,12 +244,14 @@ section.page-section {
         section.page-section article .left > * {
           margin-right: 0;
           padding: 0 5px; } }
-    section.page-section article .right > * {
-      margin-left: 25px; }
-      @media screen and (max-width: 480px) {
-        section.page-section article .right > * {
-          margin-left: 0;
-          padding: 0 5px; } }
+    section.page-section article .right {
+      text-align: left; }
+      section.page-section article .right > * {
+        margin-left: 25px; }
+        @media screen and (max-width: 480px) {
+          section.page-section article .right > * {
+            margin-left: 0;
+            padding: 0 5px; } }
 
 #section-map {
   height: 100vh; }

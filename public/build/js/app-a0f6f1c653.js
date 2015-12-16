@@ -10,6 +10,8 @@
 
 (function() {
 
+	// try http://api.jquery.com/jquery.queue/
+
 	// Set up glitter functionality
 	$.fn.fadeloop = function(options) {
 		var

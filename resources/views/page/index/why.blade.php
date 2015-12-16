@@ -9,7 +9,16 @@
         </div>
 
         <div class="right">
-            right
+            
+            <p>
+            SYRIANS ARE ON THE MOVE with open eyes for their new environments. It is a 
+            platform to bring open eyes of Syrians closer to a public. 
+
+            <br />
+
+            We invite Syrians to communicate with others through photography.
+            </p>
+
         </div>
     </article>
 </section>
