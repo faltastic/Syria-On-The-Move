@@ -4,14 +4,13 @@
   bottom  : 0;
   width   : 100%;
   z-index : 950;
-  
+
   &.sticky {
     position: fixed;
     top     : 0;
     bottom  : auto;
     
     #navigation {
-      background: rgba($white, 0.85);
     }
   }
 }
@@ -22,6 +21,7 @@
   border-top   : 1px solid rgba($purple, .65);
   border-bottom: 1px solid rgba($purple, .65);
   transition   : background .33s ease-in-out;
+  background: rgba($white, 0.85);
   
   &::after {
     content   : '';
@@ -49,7 +49,7 @@
         padding       : 5px 10px;
         font-size     : 1.75em;
         text-transform: uppercase;
-        color         : $black;
+        color         : $gray;
         border-top    : 0 solid rgba($purple, 0);
         border-bottom : 0 solid rgba($purple, 0);
         

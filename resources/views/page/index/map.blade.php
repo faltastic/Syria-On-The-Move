@@ -23,7 +23,7 @@
     <div id="section-map-overlay">
         <div id="section-map-overlay-calltoaction">
             <div id="section-map-overlay-calltoaction-container">
-                {!! HTML::image(asset('img/syriaonthemove-nav.png')) !!}
+                {!! HTML::image(asset('img/syriaonthemove.png')) !!}
 
                 <a class="maplink" href="/map"> </a>
                 <div class="slogan">Syrians are in many places now. {!! HTML::linkAction('PageController@getMap', 'Tell us through a picture') !!}</div>
